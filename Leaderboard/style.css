@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FBFAFF;
+    color: #111629;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    margin-left: 20px;
+    width: 60px;
+    height: auto;
+}
+
+.text-light{
+    color:#EAEBFF;
+}
+
+.text-lg{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 500px;
+    transition: all 0.25s ease-out;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.share-btn{
+    background-color: #FC5C76;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.exit-btn,.continue-btn{
+    padding: 0.5rem 1.4rem;
+}
+
+.exit-btn{
+    background-color: transparent;
+}
+
+.exit-btn:hover{
+    background-color: #FC5C76;
+    color: white;
+}
+
+.continue-btn{
+    background-color: #5C5BE5;
+}
+
+.leaderboard-wrapper{
+    background-color: white;
+    margin: 2rem 1.6rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px 8px #f5f5f7;
+    -moz-box-shadow: 0 0 5px 8px #f5f5f7;
+    box-shadow: 0 0 17px 8px #f5f5f7;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bg-gray{
+    background-color: #F9F9F9;
+}
+
+.bg-blue{
+    background-color: #5C5BE5;
+}
+
+.p-1{
+    padding: 1.2rem;
+}
+
+.p-2{
+    padding: 2rem;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon{
+    position: relative;
+    width: 103%;
+    left: -1.5%;
+}
+
+.ribbon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 100%;
+    background-color: #0d4974;
+    transform-origin: top left;
+    transform: skewY(50deg);
+    z-index: -1;
+}
+
+.ribbon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background-color: #0d4974;
+    transform-origin: top right;
+    transform: skewY(-50deg);
+    z-index: -1;
+}
+
+@media(min-width:768px){
+    .leaderboard-wrapper{
+        margin: 3rem auto;
+        width: 50%;
+    }
+}

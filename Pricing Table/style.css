@@ -1,0 +1,11 @@
+.grad-1{
+    background-image: radial-gradient(#f1c18a 20%, #f3d9be 50%, #fdf8f5 80%);
+}
+
+.grad-2{
+    background-image: radial-gradient(#bdf4f8 20%, #D8FAFF 50%, #EBF9FF 80%);
+}
+
+.grad-3{
+    background-image: radial-gradient(#de93fa 20%, #EDBBFF 50%, #fdf7ff 80%);
+}

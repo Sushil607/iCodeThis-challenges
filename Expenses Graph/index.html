@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Expenses Graph</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expenses</h1>
+      <div class="flex">
+        <div class="btns-container">
+          <button id="weeklyBtn" class="active-btn">Weekly</button>
+          <button id="monthlyBtn" class="">Monthly</button>
+          <button id="yearlyBtn" class="">Yearly</button>
+        </div>
+        <div class="settings">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="graph-wrapper">
+        <canvas id="myWeeklyChart"></canvas>
+      </div>
+      <div class="graph-wrapper">
+        <canvas id="myMonthlyChart" style="display: none"></canvas>
+      </div>
+      <div class="graph-wrapper">
+        <canvas id="myYearlyChart" style="display: none"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

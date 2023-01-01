@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Profile Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/783d441802.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#FFFAF2",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-200 antialiased">
+    <!-- Profile Header  -->
+    <div
+      class="bg-clifford drop-shadow-md rounded-xl my-28 mx-auto p-6 w-4/5 hover:drop-shadow-lg lg:w-1/2"
+    >
+      <!-- Info -->
+      <div class="my-1 flex justify-between items-center">
+        <div>
+          <div>
+            <img
+              class="w-14 h-14 rounded-xl"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNNE2la9vfc01CPWiygaruJgbWA-shldvrg&usqp=CAU"
+              alt="profile picture"
+            />
+          </div>
+          <div class="font-bold">MetaMask</div>
+          <div class="text-sm font-semibold">@metaMask</div>
+        </div>
+        <div class="w-2/4">
+          <div class="flex justify-between items-center">
+            <div class="text-sm font-semibold">6/8 Organizations</div>
+            <div>
+              <i class="cursor-pointer fa fa-circle-info"></i>
+            </div>
+          </div>
+          <div>
+            <div class="my-2 bg-gray-200 h-2 rounded-md">
+              <div class="bg-orange-400 h-2 rounded-md w-3/4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bio -->
+      <div class="my-1">
+        <div class="text-md font-semibold">Metamask brings Ethereum to</div>
+        <div class="text-md font-semibold">your web brwoser</div>
+      </div>
+      <!-- Buttons -->
+      <div class="my-1 flex justify-between items-center">
+        <div>
+          <button
+            class="mr-2 bg-white border-x border-y py-1 px-2 rounded-md hover:bg-black hover:text-white"
+          >
+            <i class="fa-brands fa-github"></i>
+          </button>
+          <button
+            class="mr-2 bg-white border-x border-y py-1 px-2 rounded-md hover:bg-black hover:text-white"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </button>
+          <button
+            class="mr-2 bg-white border-x border-y py-1 px-2 rounded-md hover:bg-black hover:text-white"
+          >
+            <i class="fa-brands fa-gitlab"></i>
+          </button>
+          <button
+            class="mr-2 bg-white border-x border-y py-1 px-3 rounded-md hover:bg-black hover:text-white"
+          >
+            <i class="fa-brands fa-ethereum"></i>
+          </button>
+        </div>
+        <div class="flex flex-col items-end">
+          <div class="font-semibold">
+            <span class="font-bold">4K</span> Followers
+          </div>
+          <button
+            id="followBtn"
+            class="my-1 text-sm border-2 border-black rounded-lg bg-black text-white px-8 py-2 hover:opacity-80"
+          >
+            Follow
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

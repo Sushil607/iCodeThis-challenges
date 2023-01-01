@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Pricing Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              violet: "#EDBBFF",
+              green: "#AEF1F5",
+              orange: "#FFDDB6",
+            },
+            borderWidth: {
+              DEFAULT: "1px",
+              12: "12px",
+            },
+            screens: {
+              sm: "480px",
+              md: "768px",
+              lg: "976px",
+              xl: "1440px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-semibold bg-gray-100">
+    <div class="border-8 border-white rounded-lg mx-4 my-12">
+      <div
+        class="relative border-2 border-white text-left rounded-lg sm:flex md:justify-between"
+      >
+        <div
+          class="absolute -top-10 right-0 opacity-20 -z-10 w-40 h-40 rounded-full grad-1"
+        ></div>
+        <div
+          class="absolute -top-24 right-56 opacity-40 -z-10 w-40 h-40 rounded-full grad-2"
+        ></div>
+        <div
+          class="absolute -bottom-10 -left-10 opacity-20 -z-10 w-40 h-40 rounded-full grad-3"
+        ></div>
+        <!-- Pricings go here -->
+        <!-- Free Pricing -->
+        <div class="p-6">
+          <div>Free</div>
+          <div class="my-2">
+            <div class="text-xl font-bold flex items-end">
+              $<span class="text-4xl ml-1">0</span>
+            </div>
+            <div class="text-sm h-12">Free for your whole team</div>
+          </div>
+          <div class="text-md my-2 leading-tight h-24">
+            For individuals or teams looking to organize anything.
+          </div>
+          <button class="border-2 bg-violet rounded-md my-1 px-2 py-1">
+            Get started
+          </button>
+        </div>
+        <!-- Standard Pricing -->
+        <div class="p-6">
+          <div>Standard</div>
+          <div class="my-2">
+            <div class="text-xl font-bold flex items-end">
+              $<span class="text-4xl ml-1">6</span>
+            </div>
+            <div class="text-sm h-12">Per user per month</div>
+          </div>
+          <div class="text-md my-2 leading-tight h-24">
+            For teams that need to manage more work.
+          </div>
+          <button class="border-2 bg-green rounded-md my-1 px-2 py-1">
+            Upgrade Now
+          </button>
+        </div>
+        <!-- Premium Pricing -->
+        <div class="p-6">
+          <div>Premium</div>
+          <div class="my-2">
+            <div class="text-xl font-bold flex items-end">
+              $<span class="text-4xl ml-1">12</span>
+            </div>
+            <div class="text-sm h-12">Per user per month</div>
+          </div>
+          <div class="text-md my-2 leading-tight h-24">
+            Best for teams that need to track multiple projects.
+          </div>
+          <button class="border-2 bg-orange rounded-md my-1 px-2 py-1">
+            Try for free
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

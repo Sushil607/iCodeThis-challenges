@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    margin: 30px 10px;
+}
+
+section{
+    margin: 55px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/**
+* ! Graph Slider Slider
+**/
+
+.graph-slider{
+
+    position: absolute;
+    background-color: #121D4C;
+    height: 6px;
+    width: 60%;
+    bottom: -6px;
+}
+
+.slider-fwd-btn,.slider-back-btn{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #121D4C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-fwd-btn{
+    right: 0;
+}
+
+.graphs-container{
+    position: relative;
+    padding: 0 30px;
+    height: 180px;
+    width: 90%;
+    border-bottom: 6px solid #E8EBF9;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    gap: 2px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.col{
+    height: 10px;
+    width: 12px;
+    background-color: #BEC9FF;
+}
+
+.col.light{
+    background-color: #DBE0F5;
+}
+
+.col:nth-of-type(1) {
+    height: 40px;
+}
+.col:nth-of-type(2) {
+    height: 60px;
+}
+.col:nth-of-type(3) {
+    height: 50px;
+}
+.col:nth-of-type(4) {
+    height: 70px;
+}
+.col:nth-of-type(5) {
+    height: 80px;
+}
+.col:nth-of-type(6) {
+    height: 65px;
+}
+.col:nth-of-type(7) {
+    height: 55px;
+}
+.col:nth-of-type(8) {
+    height: 45px;
+}
+.col:nth-of-type(9) {
+    height: 45px;
+}
+.col:nth-of-type(10) {
+    height: 35px;
+}
+.col:nth-of-type(11) {
+    height: 30px;
+}
+
+/**
+* ! Thin Slider
+**/
+
+.bar{
+    position: relative;
+    border-radius: 500px;
+    height: 8px;
+    width: 80%;
+    background: linear-gradient(90deg,#121D4C 33.31%,#ccc 33.31%);
+}
+
+.bar::before{
+    content: "$0";
+    position: absolute;
+    top: -8px;
+    left: -30px;
+}
+
+.bar::after{
+    content: "$1500";
+    position: absolute;
+    top: -8px;
+    right: -60px;
+}
+
+.btn-bar{
+    cursor: pointer;
+    left: 33%;
+    top: -6px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    background-color: #121D4C;
+}
+
+.tooltip{
+    border: 1px solid #ccc;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    padding: 4px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+}
+
+/**
+* ! Thick Slider
+**/
+
+.thick-bar{
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 500px;
+    height: 36px;
+    width: 90%;
+    background: linear-gradient(90deg,#121D4C 56%,#ccc 56%);
+}
+
+.thick-bar-complete{
+    border-radius: 500px;
+    background-image: repeating-linear-gradient(-45deg,
+                transparent 0 10px,
+                black 10px 20px);
+    width: 56%;
+    height: 32px;
+}
+
+.btn-thick-bar{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 500px;
+    background-color: #121D4C;
+    width: 60px;
+    height: 32px;
+    left: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/**
+* ! Sketch Slider
+**/
+
+.sketch-bar{
+    position: relative;
+    border-radius: 500px;
+    border: 2px solid rgb(216, 208, 208);
+    height: 12px;
+    width: 80%;
+    background: linear-gradient(90deg,#121D4C 39%,#ccc 40%);   
+}
+
+.sketch-bar::before{
+    content: "Sketch";
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    font-weight: 500;
+}
+
+.sketch-bar::after{
+   content: "14Gb";
+   position: absolute;
+   top: -30px;
+   right: 6px;
+}
+
+.btn-sketch-bar{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    background-color: #121D4C;
+    left: 39%;
+    top: -2px;
+}
+
+/**
+* ! Figma Slider
+**/
+
+.figma-bar{
+    position: relative;
+    border-radius: 500px;
+    border: 2px solid rgb(216, 208, 208);
+    height: 12px;
+    width: 80%;
+    background: linear-gradient(90deg,#E87272 79%,#ccc 79%);   
+}
+
+.figma-bar::before{
+    content: "Figma";
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    font-weight: 500;
+}
+
+.figma-bar::after{
+   content: "36Gb";
+   position: absolute;
+   top: -30px;
+   right: 6px;
+}
+
+.btn-figma-bar{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    background-color: #E87272;
+    left: 78%;
+    top: -2px;
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F5FF;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+}
+
+a{
+    color:#5F69C1 ;
+    font-weight: 400;
+}
+
+.container{
+    margin: 6rem auto;
+    width: 60%;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    margin: 0.8rem 0;
+}
+
+.job-card{
+    cursor: pointer;
+    margin: 0.5rem 0;
+    background: white;
+    border-radius: 10px;
+    padding: 1.2rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 40% 20% 30% 5%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.job-card:hover{
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.job-title{
+    font-weight: 600;
+}
+
+.fa{
+    cursor: pointer;
+}
+
+.fa-arrow-right{
+    color: #8B8C99;
+}
+
+@media(max-width:768px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width:425px){
+    .job-card{
+        position: relative;
+        grid-template-columns: 1fr;
+    }
+
+    .fa-arrow-right{
+        position: absolute;
+        top: 1.4rem;
+        right: 1rem;
+    }
+}
