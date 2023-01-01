@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/**
+* ! Resetting Styles
+**/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F6F7F8;
+    color: #132B50;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: #132B50;
+    font-size: 0.9rem;
+    font-weight: 500;  
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #132B50;
+    background-color: #132B50;
+    color: white;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.25s ease-out;
+}
+
+button:hover{
+    background-color: white;
+    color: #132B50;
+}
+
+.container{
+    margin: 4rem 1rem;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/**
+* ! Typography
+**/
+
+.title{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.account-type{
+    font-size: 0.8rem;
+}
+
+.account-name{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#password::placeholder{
+    color: #4f5d70;
+}
+
+.validator{
+    font-size: 0.8rem;
+}
+
+.toggle-text{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/**
+* ! Component Styling
+**/
+
+.profile{
+    margin: 0.8rem 0;
+    display: flex;
+    gap: 6px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-img-container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.password-field-container{
+    margin: 1rem 0;
+}
+
+.password-field{
+    position: relative;
+    width: 80%;
+    height: 36px;
+}
+
+.password-field input{
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    outline: none;
+    border: 1px solid #8b98aa;
+}
+
+.password-field input:focus{
+    border: 2px solid #132B50;
+}
+
+.fa-lock{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.fa-eye{
+    cursor: pointer;
+    position: absolute;
+    right: -34px;
+    top: 8px;
+}
+
+.fa-eye-slash{
+    cursor: pointer;
+    position: absolute;
+    right: -34px;
+    top: 8px;
+    display: none;
+}
+
+.fa-circle-check{
+    color: green;
+}
+
+.fa-circle-xmark{
+    color: red;
+}
+
+.btns-container{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-btn-container{
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toggle-btn{
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #132B50;
+    border-radius: 500px;
+    height: 24px;
+    width: 46px;
+    transition: all 0.4s ease-out;
+}
+
+.toggle-btn.selected{
+    background-color: #132B50;
+}
+
+.toggle-switch{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: #132B50;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+
+.toggle-switch.selected{
+    background-color: white;
+    left: 26px;
+}
+
+/**
+* ! Media Queries
+**/
+
+@media(min-width:678px){
+    .container{
+        margin: 4rem auto;
+        width: 60%;
+    }
+}
+
+@media(min-width:1024px){
+    .container{
+        width: 40%;
+    }
+}
+
