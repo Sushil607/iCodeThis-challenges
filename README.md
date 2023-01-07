@@ -4,6 +4,7 @@
 
 ### some solutions and their links :
 
+[Feedback Form](https://www.icodethis.com/submissions/655)  
 [Blog Widgets](https://www.icodethis.com/submissions/613)  
 [Blog Cards](https://www.icodethis.com/submissions/500)  
 [Password Field](https://www.icodethis.com/submissions/447)  
