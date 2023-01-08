@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Movie Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-50">
+    <!-- Container -->
+    <div class="my-20 max-w-3xl sm:mx-auto mx-4 p-8 bg-white shadow-md">
+      <!-- Header -->
+      <div class="flex flex-wrap justify-between items-center">
+        <div>
+          <h1 class="text-2xl font-semibold">The Shawshank Redemption</h1>
+          <div class="text-sky-500 font-semibold">Drama</div>
+        </div>
+        <div><span class="text-sky-500 font-semibold">9.3</span>/10</div>
+      </div>
+
+      <!-- Content -->
+      <div class="my-4 sm:max-h-96 sm:grid sm:gap-10 sm:grid-cols-10">
+        <!-- Left Content -->
+        <div class="col-span-4 sm:flex sm:flex-col sm:justify-between">
+          <div class="bg-pink-100 h-56 sm:h-80">
+            <img
+              class="object-cover h-full w-full"
+              src="https://www.themoviedb.org/t/p/original/6oL0IQE4SgZlxW5MWu1Auwsx1wi.jpg"
+              alt="The Shawshank Redemption poster"
+            />
+          </div>
+
+          <div class="my-4 sm:mb-4 flex flex-wrap justify-between items-center">
+            <div class="font-bold">$25.00</div>
+            <button
+              class="uppercase border-2 border-black rounded-full py-1 px-6 hover:bg-black hover:text-white"
+            >
+              buy
+            </button>
+          </div>
+        </div>
+        <!-- Right Content -->
+        <div class="col-span-6">
+          <!-- Right Top -->
+          <div>
+            <h2 class="font-semibold text-lg">About the Movie</h2>
+            <div>
+              Two imprisoned men bond over a number of years, finding solace and
+              eventual redemption through acts of common decency. Chronicles the
+              experiences of a formerly successful banker as a prisoner in the
+              gloomy jailhouse of Shawshank after being found guilty of a crime
+              he did not commit.
+            </div>
+          </div>
+          <!-- Right Middle -->
+          <div class="my-4 flex flex-wrap justify-between items-start">
+            <div>
+              <div class="font-semibold text-lg">Actors</div>
+              <ul>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Tim Robbins
+                </li>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Morgan Freeman
+                </li>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Bob Gunton
+                </li>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  William Sadler
+                </li>
+              </ul>
+              <a href="#" class="text-sky-600 font-bold capitalize underline"
+                >more</a
+              >
+            </div>
+            <div>
+              <div class="font-semibold text-lg">Director</div>
+              <ul>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Frank Darabont
+                </li>
+              </ul>
+              <div class="font-semibold text-lg">Screenwriter</div>
+              <ul>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Stephen King
+                </li>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Frank Darabont
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="font-semibold text-lg">Producers</div>
+              <ul>
+                <li class="text-sky-400 font-semibold cursor-pointer">
+                  Niki Marvin
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right Down -->
+          <div>
+            <div
+              class="sm:mb-4 ml-auto cursor-pointer w-44 rounded-full bg-black py-1 pr-1 pl-2 text-white uppercase flex justify-between items-center hover:w-48"
+            >
+              watch trailer
+              <div
+                class="bg-white text-black h-8 w-8 rounded-full flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

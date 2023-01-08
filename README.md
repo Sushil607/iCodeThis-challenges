@@ -4,6 +4,7 @@
 
 ### some solutions and their links :
 
+[Movie Card](https://www.icodethis.com/submissions/672)  
 [Feedback Form](https://www.icodethis.com/submissions/655)  
 [Blog Widgets](https://www.icodethis.com/submissions/613)  
 [Blog Cards](https://www.icodethis.com/submissions/500)  
