@@ -4,6 +4,7 @@
 
 ### some solutions and their links :
 
+[Pagination](https://www.icodethis.com/submissions/727)  
 [Movie Ticket](https://www.icodethis.com/submissions/711)  
 [Movie Card](https://www.icodethis.com/submissions/672)  
 [Feedback Form](https://www.icodethis.com/submissions/655)  

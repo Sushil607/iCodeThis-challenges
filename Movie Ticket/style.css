@@ -194,6 +194,7 @@ button{
     overflow: hidden;
     margin: 4rem auto;
     background-color: white;
+    border-radius: 8px;
     padding: 1rem;
     text-align: center;
 }
