@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Poll</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          If you write a book about failure, and it doesn't sell, is it called
+          success?
+        </div>
+      </header>
+      <main>
+        <div class="voting-group">
+          <input type="checkbox" id="success-vote" />
+          <label for="success-vote">Definitely a success.</label>
+          <div class="info">
+            <div class="empty-bar">
+              <div class="success-bar"></div>
+            </div>
+            <div class="vote-percentage" id="success-vote-percentage">65%</div>
+          </div>
+        </div>
+        <div class="voting-group">
+          <input type="checkbox" id="no-vote" />
+          <label for="no-vote">No.</label>
+          <div class="info">
+            <div class="empty-bar">
+              <div class="no-bar"></div>
+            </div>
+            <div class="vote-percentage" id="no-vote-percentage">12%</div>
+          </div>
+        </div>
+        <div class="voting-group">
+          <input type="checkbox" id="only-vote" />
+          <label for="only-vote"
+            >Only if it's in the How To section of the library.</label
+          >
+          <div class="info">
+            <div class="empty-bar">
+              <div class="only-bar"></div>
+            </div>
+            <div class="vote-percentage" id="only-vote-percentage">23%</div>
+          </div>
+        </div>
+        <div id="error">Please select one option to vote.</div>
+        <div class="btn-container">
+          <button id="submit-btn" type="submit">submit</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
