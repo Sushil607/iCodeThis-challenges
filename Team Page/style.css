@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/**
+*! Resetting Base Styles
+**/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #17213F;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    border:none;
+    background: transparent;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.team{
+    margin: 8rem 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/**
+*! Typography & Image Sizes
+**/
+
+.name{
+    margin: 0.1rem 0;
+    font-weight: 500;
+}
+
+.profession{
+    margin: 0.1rem 0;
+    font-weight: 300;
+}
+
+.previous{
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.add{
+    margin: 0.6rem 0;
+}
+
+.member-profile{
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+}
+
+.company-logo{
+    height: 28px;
+}
+
+
+/**
+*! Component Stylings
+**/
+
+.team-member-card{
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #0F162B;
+    max-width: 320px;
+    height: 310px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.team-member-card:hover{
+    box-shadow: 3px 4px 12px rgba(0,0,0,0.3);
+}
+
+.member-info{
+    padding: 0.6rem 1rem;
+}
+
+.add-card{
+    height: 310px;
+    padding: 1rem 0;
+    border: 4px solid #141D38;
+    border-radius: 4px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-more-btn{
+    border-radius: 50%;
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+}
+
+.add-btn-more:hover{
+    border: 1px solid white;
+}
+
+/**
+*! Overlay Stylings
+**/
+
+.overlay-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    border-radius: 6px;
+    background-color: white;
+    max-width: 600px;
+    color: #0F162B;
+    padding: 2rem 1.8rem;
+}
+
+.form-control{
+    margin: 0.6rem 0;
+}
+
+label{
+    display: block;
+    font-weight: 500;
+}
+
+input{
+    margin: 0.2rem 0;
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid #0F162B;
+    padding: 0 20px;
+}
+
+.add-btn{
+    margin: 0.6rem 0;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: #0F162B;
+    color: white;
+    padding: 0.6rem;
+}
+
+.add-btn:hover{
+    transform: translate(0);
+    opacity: 0.9;
+}
+
+.close-btn{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0F162B;
+    margin-left: 97%;
+}

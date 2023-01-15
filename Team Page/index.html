@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Team Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="team">
+      <!-- Member 1 -->
+      <div class="team-member-card">
+        <img
+          class="member-profile"
+          src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="team member"
+        />
+        <div class="member-info">
+          <div class="name">Bill Alvarado</div>
+          <div class="profession">Digital product designer</div>
+          <div class="previous-employment">
+            <div class="previous">Previously</div>
+            <img
+              class="company-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Google_Name.svg/120px-Google_Name.svg.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Member 2 -->
+      <div class="team-member-card">
+        <img
+          class="member-profile"
+          src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="team member"
+        />
+        <div class="member-info">
+          <div class="name">Jon Copeland</div>
+          <div class="profession">Software architect</div>
+          <div class="previous-employment">
+            <div class="previous">Previously</div>
+            <img
+              class="company-logo"
+              src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Member 3 -->
+      <div class="team-member-card">
+        <img
+          class="member-profile"
+          src="https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="team member"
+        />
+        <div class="member-info">
+          <div class="name">Leo Harvey</div>
+          <div class="profession">Product assistant</div>
+          <div class="previous-employment">
+            <div class="previous">Previously</div>
+            <img
+              class="company-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/505px-Apple_logo_white.svg.png?20220821122232"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Add Card -->
+      <div class="add-card">
+        <button class="add-more-btn">+</button>
+        <div class="add">Add more</div>
+      </div>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <button class="close-btn">X</button>
+        <form class="form">
+          <h2>Add a member</h2>
+          <div class="form-control">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-control">
+            <label for="name">Profile image (add image link)</label>
+            <input type="text" id="image" required />
+          </div>
+          <div class="form-control">
+            <label for="name">Profession</label>
+            <input type="text" id="profession" required />
+          </div>
+          <div class="form-control">
+            <label for="name">Previously worked at (add image link)</label>
+            <input type="text" id="previous" required />
+          </div>
+          <div class="btn-container">
+            <button class="add-btn" type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>

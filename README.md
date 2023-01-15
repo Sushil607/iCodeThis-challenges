@@ -4,6 +4,7 @@
 
 ### some solutions and their links :
 
+[Team Page](https://www.icodethis.com/submissions/949)  
 [Progress Bar](https://www.icodethis.com/submissions/891)  
 [Pricing Card](https://www.icodethis.com/submissions/847)  
 [Poll](https://www.icodethis.com/submissions/813)  
