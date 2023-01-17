@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>iCodeThis - Projects Chart</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-top">
+        <img
+          src="https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="John Hawkins profile image"
+        />
+        <div class="name">John Hawkins</div>
+        <div class="profession">UI/UX Designer</div>
+        <div class="bio">
+          Mauris ac quam quisque, donec ac, praesent in hymenaeos wisi.
+        </div>
+      </div>
+      <div class="card-bottom">
+        <div class="projects-title">Projects</div>
+        <div id="gradient">
+          <div class="circle">
+            <div class="projects">314</div>
+            <div class="total">Total</div>
+          </div>
+        </div>
+        <div class="projects-data">
+          <div class="group">
+            <div id="completed" class="bold">0</div>
+            <div class="tag">Completed</div>
+            <div class="dot bg-cyan"></div>
+          </div>
+          <div class="group">
+            <div id="overdue" class="bold">0</div>
+            <div class="tag">Overdue</div>
+            <div class="dot bg-yellow"></div>
+          </div>
+          <div class="group">
+            <div id="inprogress" class="bold">0</div>
+            <div class="tag">In Progress</div>
+            <div class="dot bg-violet"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
