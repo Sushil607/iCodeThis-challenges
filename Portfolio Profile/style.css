@@ -1,0 +1,309 @@
+/**
+* ! Resetting Base Styles
+**/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: #1C2333;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #a5a7a5;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.25s ease-out;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.page{
+    position: relative;
+    margin: 4rem 1.2rem;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+.tag{
+    position: absolute;
+    top: 0;
+    right: -28px;
+    width: 2.2rem;
+    padding: 1rem 0;
+    background-color: #D9D9D9;
+    color: #1C2333;
+    display: flex;
+    gap: 1.8rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 2px 2px 12px rgba(0,0,0,0.4);
+    font-size: 1.2rem;
+}
+
+/**
+* ! Typography
+**/
+
+.fa-bell{
+    position: relative;
+}
+
+.fa-bell::after{
+    content: "3";
+    border-radius: 50%;
+    background-color: #1C2333;
+    width: 16px;
+    height: 16px;
+    color: white;
+    position: absolute;
+    top: -12px;
+    left: 8px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #222939;
+}
+
+.location{
+    margin: 0.6rem 0;
+}
+
+.stat{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222939;
+}
+
+.about{
+    margin-bottom: 0.6rem;
+}
+
+.title{
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222939;
+}
+
+.likes{
+    font-size: 0.7rem;
+    color: white;
+}
+
+.likes .fa-heart{
+    color: #DC2B5A;
+}
+
+/**
+* ! Component Styling
+**/
+
+.profile-image-container{
+    height: 300px;
+    margin-top: -40px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.6);
+    object-fit:cover;
+    overflow: hidden;
+}
+
+.personal-info,.statistics-info,.follow-btn-container,.about-me,.skills{
+    padding: 1rem 0;
+}
+
+.profile-info-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.statistics-info{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-group{
+    text-align: center;
+}
+
+.follow-btn{
+    background-color: #FFB700;
+    color: white;
+}
+
+.skill{
+    text-align: left;
+    margin: 0.6rem 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-name{
+    text-align: right;
+    color: #1C2333;
+    flex: 0.5;
+}
+
+.empty-bar{
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.2rem 0;
+    background-color: #ccc;
+    height: 2px;
+    width: 100%;
+}
+
+.filled-bar{
+    position: relative;
+    background-color: #1C2333;
+    height: 4px;
+    width: 43%;
+}
+
+.filled-bar::after{
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: 100%;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #1C2333;
+}
+
+.pictures-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+.picture{
+    width: 260px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.9;
+    transition: all 0.25s ease-out;
+}
+
+.picture:hover{
+    opacity: 1;
+}
+
+.likes{
+    padding: 0.4rem 0.5rem;
+    position: absolute;
+    bottom: 4px;
+    background-color: #1C2333;
+}
+
+.load-more-btn{
+    margin: 0.6rem 0;
+    font-weight: 700;
+    color: #1C2333;
+}
+
+/**
+* ! Media Queries
+**/
+
+@media(min-width:768px){
+    .profile-image-container{
+        min-height: 105%;
+        max-height: 480px;
+        object-fit: cover;
+    }
+
+    .about-me,.skills{
+        padding-top: 0;
+    }
+
+    .title{
+        margin: 0.1rem 0;
+    }
+
+    .about{
+        margin-bottom: 0.2rem;
+    }
+
+    .profile{
+        text-align: left;
+        display: grid;
+        gap: 28px;
+        grid-template-columns: 2fr 5fr;
+    }
+
+    .location{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .profile-info-top {
+            justify-content: space-between;
+            align-items: flex-end;
+    }
+
+    .statistics-info{
+        height: 100%;
+        padding-left: 1rem;
+        border-left: 1px solid #d8e7d8;
+        padding-right: 1rem;
+        border-right: 1px solid #d8e7d8;
+    }
+    .profile-info-top{
+        border-bottom: 1px solid #d8e7d8;
+    }
+
+    .profile-info-bottom{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .skills .title{
+        text-align: center;
+    }
+
+    .pictures .title{
+        text-align: left;
+    }
+
+    .picture{
+        height: auto;
+    }
+}
+
+@media(min-width:1024px){
+    .page{
+        margin: 4rem 6rem;
+    }
+}

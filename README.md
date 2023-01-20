@@ -4,6 +4,7 @@
 
 ### some solutions and their links :
 
+[Portfolio Profile](https://www.icodethis.com/submissions/1172)  
 [Profile Tooltip](https://www.icodethis.com/submissions/1113)  
 [Company Card](https://www.icodethis.com/submissions/1058)  
 [Projects Chart](https://www.icodethis.com/submissions/1012)  
