@@ -1,0 +1,119 @@
+/**
+* ! Resetting Base Styles
+**/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDF3FF;
+    color: #0F1128;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 500px;
+    padding: 0.6rem 1.8rem;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0F1128;
+}
+
+.container{
+    max-width: 400px;
+    margin: 4rem 1.2rem;
+}
+
+/**
+* ! Typography
+**/
+
+h1{
+    font-size: 1.6rem;
+}
+
+.form-control{
+    margin: 0.9rem 0;
+}
+
+.form-control:nth-last-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control:nth-last-of-type(2) a{
+    text-decoration: none;
+}
+
+.form-control:nth-last-of-type(2) a:hover{
+    text-decoration: underline;
+}
+
+.form-control:last-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    margin: 0.2rem 0;
+    display: block;
+    font-size: 0.9rem;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border: 2px solid #D6DEEE;
+    border-radius: 4px;
+    padding: 0.6rem 0.4rem;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #0F1128;
+}
+
+.sign-in-btn{
+    background-color: #4D49E8;
+}
+
+/**
+* ! Component Styles
+**/
+
+.form-container{
+    background-color: #4D49E8;
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+#form{
+    margin-left: -25%;
+    border-radius: 8px;
+    background-color: white;
+    padding: 2rem 1.8rem;
+}
+
+@media(min-width:425px){
+    .container{
+        margin: 4rem auto;
+    }
+}
